@@ -1,0 +1,20 @@
+{
+  "bookshelf":{
+    "goodBooks":[
+      {"src":"../../images/img1.jpeg","name":"大学中庸"},
+      {"src":"../../images/img1.jpeg","name":"大学中庸"},
+      {"src":"../../images/img1.jpeg","name":"大学中庸"},
+      {"src":"../../images/img1.jpeg","name":"大学中庸"},
+      {"src":"../../images/img1.jpeg","name":"大学中庸"},
+      {"src":"../../images/img1.jpeg","name":"大学中庸"}
+    ],
+    "hotBooks":[
+      {"src":"../../images/img2.jpeg","name":"几生修得到梅花"},
+      {"src":"../../images/img2.jpeg","name":"几生修得到梅花"},
+      {"src":"../../images/img2.jpeg","name":"几生修得到梅花"},
+      {"src":"../../images/img2.jpeg","name":"几生修得到梅花"},
+      {"src":"../../images/img2.jpeg","name":"几生修得到梅花"},
+      {"src":"../../images/img2.jpeg","name":"几生修得到梅花"}
+    ]
+  }
+}
