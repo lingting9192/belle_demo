@@ -4,7 +4,7 @@
     <div class="account">
       <div class="acc_img"><img src="../../images/icon.jpeg" alt=""></div>
       <p class="acc_status">立即登录</p>
-      <img src="../../images/shezhi.jpeg" class="acc_set"/>
+      <img src="../../images/shezhi.jpeg" class="acc_set" @click="goFit"/>
       <ol class="acct">
         <li>
           <span>0</span>
@@ -154,6 +154,11 @@
       </ol>
       <p class="transit1"></p>
     </div>
+
+    <!-- 嵌套路由必备 -->
+    <transition name="router-slid" mode="out-in">
+      <router-view></router-view>
+    </transition>
   </div>
 </template>
 <script>
@@ -161,11 +166,19 @@ import Head from '@/pages/head/head'
 export default {
   components:{
     Head
+  },
+  methods:{
+    goFit:function(){
+      console.log('kkllllllll')
+      this.$router.push({path:'/me/fit'})
+    }
   }
 }
 </script>
 <style lang="stylus" scoped>
 @import '../../common/stylus/font.styl'
+#me
+  height 100%
 .account
   height 4rem
   padding 0.2rem

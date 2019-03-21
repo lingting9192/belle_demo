@@ -6,6 +6,7 @@ const bookshelf = r => require.ensure([], () => r(require('@/pages/bookshelf/boo
 const bookcity = r => require.ensure([], () => r(require('@/pages/bookcity/bookcity')), 'bookcity')
 const me = r => require.ensure([], () => r(require('@/pages/me/me')), 'me')
 const novel = r => require.ensure([], () => r(require('@/pages/bookcity/children/novel')), 'novel')
+const fit = r => require.ensure([], () => r(require('@/pages/me/children/fit')), 'fit')
 
  Vue.use(Router)
 
@@ -35,7 +36,12 @@ export default new Router({
     {
       name:'me',
       path: '/me',
-      component: me
+      component: me,
+      children:[{
+        name:'fit',
+        path: 'fit',
+        component: fit,
+      }]
     },
   ]
 })

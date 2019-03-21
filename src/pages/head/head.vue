@@ -1,5 +1,6 @@
 <template>
   <div class="head">
+    <img v-if="show" src="../../images/back.jpeg" alt="" class="back" @click="back">
     <p>{{title}}</p>
   </div>
 </template>
@@ -7,7 +8,13 @@
 export default {
   name:'Head',
   props:{
-    title:String
+    title:String,
+    show:Boolean
+  },
+  methods:{
+    back:function(){
+      this.$router.go(-1)
+    }
   }
 }
 </script>
@@ -19,5 +26,17 @@ export default {
   text-align center
   font-size $font-36
   color $color
+  position relative
+  background $color-fff
+  p
+    position relative
+    z-index 100
+  .back
+    width 0.6rem
+    padding 0.2rem
+    position absolute 
+    left 0.1rem
+    top 0
+    z-index 1000
 </style>
 
